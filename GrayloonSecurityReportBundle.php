@@ -1,6 +1,6 @@
 <?php
 
-namespace Treetop1500\SecurityReportBundle;
+namespace Grayloon\SecurityReportBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
