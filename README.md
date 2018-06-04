@@ -1,5 +1,5 @@
 # security-report
-A Symfony 3 bundle for automating reports with the Symfony security checker components.
+A Symfony bundle for automating reports with the Symfony security checker components.
 
 *Please note: This bundle is not ready for public use yet, and is not in the Packagist repository, so the composer installation below will not work yet.*
 
@@ -9,7 +9,7 @@ Add the following to your composer.json file.
 ```
 "require": {
     ...
-    "treetop1500/security-report": "~1.0"
+    "grayloon/security-report": "~1.0"
 },
 ```
 
@@ -20,7 +20,7 @@ public function registerBundles()
     {
         $bundles = [
             ...
-            new \Treetop1500\SecurityReportBundle\Treetop1500SecurityReportBundle()
+            new \Grayloon\SecurityReportBundle\GrayloonSecurityReportBundle()
         ];
 
         ...
@@ -35,7 +35,7 @@ Add the following to your config:
 
 ```
 #app/config.yml
-treetop1500_security_report:
+grayloon_security_report:
     key: XXXXXXXXXXXXXXXXXXXXXX
     allowable_ips: [127.0.0.1]
     show_output: true
@@ -67,8 +67,8 @@ Import the routing:
 
 ```
 #app/routing.yml
-treetop1500_security_report:
-    resource: "@Treetop1500SecurityReportBundle/Resources/config/routing.yml"
+grayloon_security_report:
+    resource: "@GrayloonSecurityReportBundle/Resources/config/routing.yml"
 ```
 
 This is ony required if you're not using the symfony command.
@@ -81,7 +81,7 @@ To run the security report, simply access the url from any configured allowable 
 
 To run the report command use:
 
-    bin/console treetop:report
+    bin/console grayloon:report
     
 ### Crons
 It is recommended to set up a cron to run this checker periodically to alert you of new vulnerabilities. Make sure to add the IP addresses of the remote that the cron will be using.

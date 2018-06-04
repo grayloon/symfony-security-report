@@ -1,6 +1,6 @@
 <?php
 
-namespace Treetop1500\SecurityReportBundle\Controller;
+namespace Grayloon\SecurityReportBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
@@ -14,7 +14,7 @@ use Symfony\Component\HttpFoundation\IpUtils;
 
 /**
  * Class DefaultController
- * @package Treetop1500\SecurityReportBundle\Controller
+ * @package Grayloon\SecurityReportBundle\Controller
  * @author http://github.com/treetop1500
  */
 class DefaultController extends Controller
@@ -166,7 +166,7 @@ class DefaultController extends Controller
            ->setTo($this->email_recipients)
            ->setBody(
              $this->renderView(
-               'Treetop1500SecurityReportBundle:Default:report.html.twig',
+               'GrayloonSecurityReportBundle:Default:report.html.twig',
                array(
                  'report' => $content,
                  'remote_address' => $this->remote_address,
@@ -182,7 +182,7 @@ class DefaultController extends Controller
              ->setFrom($this->email_from)
              ->setBody(
                $this->renderView(
-                 'Treetop1500SecurityReportBundle:Default:notification.html.twig',
+                 'GrayloonSecurityReportBundle:Default:notification.html.twig',
                  array(
                    'remote_address' => $this->remote_address,
                    'host' => $this->host

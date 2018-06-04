@@ -1,6 +1,6 @@
 <?php
 
-namespace Treetop1500\SecurityReportBundle\DependencyInjection;
+namespace Grayloon\SecurityReportBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class Treetop1500SecurityReportExtension extends Extension
+class GrayloonSecurityReport extends Extension
 {
     /**
      * {@inheritdoc}

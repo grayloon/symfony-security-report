@@ -1,6 +1,6 @@
 <?php
 
-namespace Treetop1500\SecurityReportBundle\Tests\Controller;
+namespace Grayloon\SecurityReportBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

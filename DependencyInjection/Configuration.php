@@ -1,6 +1,6 @@
 <?php
 
-namespace Treetop1500\SecurityReportBundle\DependencyInjection;
+namespace Grayloon\SecurityReportBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('treetop1500_security_report');
+        $rootNode = $treeBuilder->root('grayloon_security_report');
 
         $rootNode
             ->children()

@@ -1,5 +1,5 @@
 {
-    "name": "treetop1500/security-report",
+    "name": "grayloon/security-report",
     "license": "MIT",
     "description": "A security report automator utilizing the sensio labs security check component.",
     "type": "symfony-bundle",
@@ -7,11 +7,19 @@
         {
             "name": "Robert Wade",
             "email": "rwade@grayloon.com"
+        },
+        {
+            "name": "Justin Neel",
+            "email": "jneel@grayloon.com"
+        },
+        {
+            "name": "Lucas Matte",
+            "email": "lmatte@grayloon.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Treetop1500\\SecurityReportBundle\\": ""
+            "Grayloon\\SecurityReportBundle\\": ""
         }
     },
     "require": {

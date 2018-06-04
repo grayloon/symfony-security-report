@@ -6,7 +6,7 @@
  * Time: 2:04 PM
  */
 
-namespace Treetop1500\SecurityReportBundle\Command;
+namespace Grayloon\SecurityReportBundle\Command;
 
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
@@ -123,7 +123,7 @@ class SecurityCheckCommand extends ContainerAwareCommand
         ->setTo($this->email_recipients)
         ->setBody(
           $this->getContainer()->get('templating')->render(
-            'Treetop1500SecurityReportBundle:Default:report.html.twig',
+            'GrayloonSecurityReportBundle:Default:report.html.twig',
             array(
               'report' => $content,
               'host' => $host,
