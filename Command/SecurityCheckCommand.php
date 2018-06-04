@@ -59,7 +59,7 @@ class SecurityCheckCommand extends ContainerAwareCommand
   protected function configure()
   {
     $this
-      ->setName('treetop:report')
+      ->setName('grayloon:report')
       ->setDescription('Check project dependencies for security issues');
   }
   
@@ -68,7 +68,7 @@ class SecurityCheckCommand extends ContainerAwareCommand
    */
   protected function execute(InputInterface $input, OutputInterface $output)
   {
-    $config = $this->getContainer()->getParameter('treetop1500_security_report.config');
+    $config = $this->getContainer()->getParameter('grayloon_security_report.config');
     $this->showOutput = $config['show_output'];
     $this->deliveryMethod = $config['delivery_method'];
     $this->email_recipients = $config['email_recipients'];

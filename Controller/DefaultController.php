@@ -15,7 +15,6 @@ use Symfony\Component\HttpFoundation\IpUtils;
 /**
  * Class DefaultController
  * @package Grayloon\SecurityReportBundle\Controller
- * @author http://github.com/treetop1500
  */
 class DefaultController extends Controller
 {
@@ -94,7 +93,7 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request, $key)
     {
-        $config = $this->getParameter('treetop1500_security_report.config');
+        $config = $this->getParameter('grayloon_security_report.config');
         $this->access_key = $config['key'];
         $this->allowableIps = $config['allowable_ips'];
         $this->showOutput = $config['show_output'];
