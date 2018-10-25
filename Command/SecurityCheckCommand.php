@@ -99,7 +99,7 @@ class SecurityCheckCommand extends ContainerAwareCommand
    */
   private function advisoriesExist($content)
   {
-    if (preg_match('/\[OK\]/', $content)) {
+    if (preg_match('/[No packages have known vulnerabilities]/', $content)) {
       return false;
     }
     

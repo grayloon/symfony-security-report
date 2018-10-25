@@ -143,8 +143,8 @@ class DefaultController extends Controller
      * checks if the result of the security:check command contains an [OK] status or not.
      */
     private function advisoriesExist($content) {
-        if(preg_match('/\[OK\]/', $content)) {
-          return false;
+        if (preg_match('/[No packages have known vulnerabilities]/', $content)) {
+            return false;
         }
 
         return true;
